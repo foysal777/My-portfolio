@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.radial-progress::after {
+    content: none !important; 
+}
+
+#loadingScreen {
+    position: fixed;
+    top: 0; /* Ensures it starts from the top */
+    left: 0; /* Ensures it starts from the left */
+    height: 100vh; /* 100% of the viewport height */
+    width: 100vw; /* 100% of the viewport width */
+    background-color: black; /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Sits above other content */
+}
