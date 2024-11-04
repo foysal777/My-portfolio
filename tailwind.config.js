@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['*'], 
+  content: ["./**/*.{html,js}"],
   theme: {
     fontFamily: {
       'display': ['Oswald', 'Nunito Sans'],
@@ -12,7 +12,7 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [
+  plugins: [ 
     require('daisyui'),
   ],
 }
